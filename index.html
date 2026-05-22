@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIRA — Software clínico, feito por médicos</title>
+<meta name="description" content="A AIRA é um estúdio de software clínico. Construímos ferramentas para a saúde — oncologia, cirurgia, urologia, pesquisa clínica — com rigor de engenharia.">
+<link rel="icon" type="image/svg+xml" href="assets/aira-favicon.svg">
+<link rel="apple-touch-icon" href="assets/aira-apple-touch-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sheet">
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/aira-lockup-horizontal.svg" alt="AIRA">
+      <span class="tag">aira.dev.br</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="empresa.html">Empresa</a>
+      <a class="nav-cta" href="mailto:fredmtec@gmail.com">Contato</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div>
+      <span class="kicker">AIRA · Estúdio de software clínico</span>
+      <h1>Saúde, com rigor<br>de <em>engenharia</em>.</h1>
+      <p class="lead">A AIRA constrói ferramentas de software para a saúde.
+        Somos médicos que programam — e cada projeto vai para <b>produção</b>,
+        para a mão de quem cuida. <span class="serif-it">Nada de slide.</span></p>
+      <div class="figs">
+        <div class="fig-i"><span class="fv">08</span><span class="fl">Ferramentas</span></div>
+        <div class="fig-i"><span class="fv">05</span><span class="fl">Em produção</span></div>
+        <div class="fig-i"><span class="fv">421<u>k</u></span><span class="fl">Ensaios indexados</span></div>
+        <div class="fig-i"><span class="fv">05</span><span class="fl">Áreas clínicas</span></div>
+      </div>
+    </div>
+    <div class="hero-fig">
+      <span class="orb"></span>
+      <img class="bird" src="assets/aira-symbol.svg" alt="Símbolo AIRA — saí-azul">
+    </div>
+  </header>
+
+  <!-- ===================== § 01 — INSTRUMENTAL ===================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="shead">
+        <span class="ref">§ 01 — Instrumental</span>
+        <h2>Ferramentas reais,<br>em <em>uso clínico</em></h2>
+        <p class="desc">Cada projeto da AIRA resolve um problema concreto do
+          cuidado. Não são demos — estão em produção.</p>
+      </div>
+
+      <div class="projlist">
+        <a class="proj" href="projetos.html">
+          <span class="proj-n">01</span>
+          <div>
+            <div class="proj-head"><h3>OncoPlan</h3>
+              <span class="status prod"><span class="dot"></span>Em produção</span></div>
+            <p>Gestão de quimioterapia de ponta a ponta — protocolos, ciclos de
+              infusão, toxicidade (CTCAE), interações e autorização de convênio
+              num só fluxo.</p>
+            <div class="proj-tags"><b>Oncologia clínica</b> · Next.js · PostgreSQL · Prisma</div>
+          </div>
+        </a>
+        <a class="proj" href="projetos.html">
+          <span class="proj-n">02</span>
+          <div>
+            <div class="proj-head"><h3>SurgCount</h3>
+              <span class="status prod"><span class="dot"></span>Em produção</span></div>
+            <p>Rastreio de instrumental cirúrgico. Cada instrumento contado,
+              localizado e auditado — antes, durante e depois da cirurgia.</p>
+            <div class="proj-tags"><b>Centro cirúrgico</b> · React · Vite · TypeScript</div>
+          </div>
+        </a>
+        <a class="proj" href="projetos.html">
+          <span class="proj-n">03</span>
+          <div>
+            <div class="proj-head"><h3>Hybrid Search</h3>
+              <span class="status prod"><span class="dot"></span>Em produção</span></div>
+            <p>Busca híbrida — semântica e textual — sobre 421.673 ensaios
+              clínicos do ClinicalTrials.gov. Achar o ensaio certo deixa de
+              ser garimpo.</p>
+            <div class="proj-tags"><b>Pesquisa clínica</b> · pgvector · RRF · Supabase</div>
+          </div>
+        </a>
+        <a class="proj" href="projetos.html">
+          <span class="proj-n">04</span>
+          <div>
+            <div class="proj-head"><h3>Copiloto de Consulta</h3>
+              <span class="status prod"><span class="dot"></span>Em produção</span></div>
+            <p>Sugestões clínicas em tempo real durante o atendimento,
+              ancoradas nas diretrizes NCCN. O raciocínio do especialista,
+              ao alcance da beira do leito.</p>
+            <div class="proj-tags"><b>Apoio à decisão</b> · SSE · RAG · NCCN</div>
+          </div>
+        </a>
+        <a class="proj" href="projetos.html">
+          <span class="proj-n">05</span>
+          <div>
+            <div class="proj-head"><h3>ProstPlan AI</h3>
+              <span class="status prod"><span class="dot"></span>Em produção</span></div>
+            <p>O primeiro app brasileiro de planejamento cirúrgico de
+              <span class="serif-it">nerve sparing</span> para a prostatectomia
+              radical. Transforma os dados da biópsia em um plano cirúrgico
+              individualizado — antes da sala de cirurgia.</p>
+            <div class="proj-tags"><b>Urologia · cirurgia de próstata</b> · App iOS · prostplanai.com</div>
+          </div>
+        </a>
+        <a class="proj" href="projetos.html">
+          <span class="proj-n">06</span>
+          <div>
+            <div class="proj-head"><h3>Trials Match</h3>
+              <span class="status pilot"><span class="dot"></span>Em piloto</span></div>
+            <p>Triagem de elegibilidade paciente ↔ ensaio clínico. A partir do
+              caso, ranqueia a compatibilidade com os ensaios abertos.</p>
+            <div class="proj-tags"><b>Pesquisa clínica</b> · Next.js · LLM · Zod</div>
+          </div>
+        </a>
+      </div>
+
+      <p style="margin-top:28px;font-family:var(--mono);font-size:12px;letter-spacing:.06em">
+        <a href="projetos.html" style="color:var(--blue-deep)">→ Ver as 8 ferramentas em detalhe</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== § 02 — SAÚDE (faixa em cor) ===================== -->
+  <section class="section band-navy">
+    <div class="wrap">
+      <div class="shead">
+        <span class="ref">§ 02 — Foco</span>
+        <h2>Tudo nasce dentro<br>do <em>cuidado</em></h2>
+        <p class="desc">A AIRA não é uma empresa de tecnologia que entrou na
+          saúde. É o contrário — a saúde é o ponto de partida, e a engenharia,
+          o método.</p>
+      </div>
+
+      <div class="domains">
+        <div class="domain"><span class="dn">A1</span>
+          <div><div class="dt">Oncologia clínica</div>
+            <div class="dd">Quimioterapia, protocolos, toxicidade.</div></div>
+          <span class="dx">OncoPlan</span></div>
+        <div class="domain"><span class="dn">A2</span>
+          <div><div class="dt">Centro cirúrgico</div>
+            <div class="dd">Instrumental, contagem, auditoria.</div></div>
+          <span class="dx">SurgCount</span></div>
+        <div class="domain"><span class="dn">A3</span>
+          <div><div class="dt">Urologia</div>
+            <div class="dd">Planejamento cirúrgico, antes da sala.</div></div>
+          <span class="dx">ProstPlan AI</span></div>
+        <div class="domain"><span class="dn">A4</span>
+          <div><div class="dt">Pesquisa clínica</div>
+            <div class="dd">Ensaios, elegibilidade, busca.</div></div>
+          <span class="dx">Hybrid Search</span></div>
+        <div class="domain"><span class="dn">A5</span>
+          <div><div class="dt">Operação de clínica</div>
+            <div class="dd">Agenda, atendimento, insumos.</div></div>
+          <span class="dx">MedHub · Júlia</span></div>
+      </div>
+
+      <p class="pull">“Software clínico não pode ser bonito e errado.
+        Tem que ser certo — e, de preferência, também bonito.”</p>
+    </div>
+  </section>
+
+  <!-- ===================== § 03 — EM CONSTRUÇÃO ===================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="shead">
+        <span class="ref">§ 03 — Bancada</span>
+        <h2>O que estamos<br><em>construindo</em></h2>
+        <p class="desc">O instrumental cresce. Estes são os projetos hoje
+          na bancada da AIRA.</p>
+      </div>
+
+      <div class="build">
+        <div class="brow">
+          <span class="yr">2026</span>
+          <div class="bd"><h4>MedHub</h4>
+            <p>Marketplace de saúde — conecta profissionais, clínicas e
+              distribuidores: espaços, equipamentos e insumos médicos num
+              só lugar.</p></div>
+          <span class="status dev"><span class="dot"></span>Em desenvolvimento</span>
+        </div>
+        <div class="brow">
+          <span class="yr">2026</span>
+          <div class="bd"><h4>Júlia</h4>
+            <p>Recepcionista virtual de clínica. Agenda, remarca e confirma
+              consultas por WhatsApp e Telegram, em linguagem natural.</p></div>
+          <span class="status dev"><span class="dot"></span>Em desenvolvimento</span>
+        </div>
+        <div class="brow">
+          <span class="yr">···</span>
+          <div class="bd"><h4>O próximo problema clínico</h4>
+            <p>A bancada está sempre aberta. Se há um problema do cuidado que
+              pede uma ferramenta de verdade, ele entra aqui.</p></div>
+          <span class="status dev"><span class="dot"></span>Em estudo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <div class="cta">
+    <h3>Tem um problema clínico que pede uma
+      <em>ferramenta de verdade?</em></h3>
+    <div class="cta-act">
+      <a class="btn btn-solid" href="mailto:fredmtec@gmail.com">Falar com a AIRA →</a>
+      <a class="btn btn-ghost" href="projetos.html">Ver os projetos</a>
+    </div>
+  </div>
+
+</div><!-- /sheet -->
+
+<!-- ===================== RODAPÉ (moldura navy) ===================== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="assets/aira-lockup-horizontal-dark.svg" alt="AIRA">
+      <p>Estúdio de software clínico. Ferramentas para a saúde,
+        construídas com rigor de engenharia.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navegação</h5>
+      <a href="index.html">Início</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="empresa.html">Empresa</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contato</h5>
+      <a href="mailto:fredmtec@gmail.com">fredmtec@gmail.com</a>
+      <span>aira.dev.br</span>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>© 2026 AIRA · Software clínico</span>
+    <span>Símbolo: saí-azul · Dacnis cayana</span>
+  </div>
+</footer>
+
+</body>
+</html>
