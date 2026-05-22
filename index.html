@@ -54,11 +54,6 @@ html.intro-lock, html.intro-lock body { overflow: hidden; }
 @keyframes ai-flap{0%,49%{transform:rotate(0)}54%{transform:rotate(-30deg)}60%{transform:rotate(16deg)}65%{transform:rotate(-9deg)}70%,100%{transform:rotate(0)}}
 @keyframes ai-inWord{0%,61%{opacity:0;transform:translateY(22px)}74%,100%{opacity:1;transform:translateY(0)}}
 @keyframes ai-glow{0%,34%{opacity:.18;transform:translate(-50%,-50%) scale(.72)}56%{opacity:.5;transform:translate(-50%,-50%) scale(1)}74%,100%{opacity:.7;transform:translate(-50%,-50%) scale(1.12)}}
-@media (prefers-reduced-motion: reduce){
-  #aira-intro{animation:ai-dismiss .8s forwards}
-  .ai-pc,.ai-word{opacity:1 !important;animation:none !important}
-  .ai-g,.ai-wingwrap{animation:none !important}
-}
 </style>
 </head>
 <body>
@@ -329,10 +324,6 @@ html.intro-lock, html.intro-lock body { overflow: hidden; }
 (function () {
   var i = document.getElementById('aira-intro');
   if (!i) return;
-  var seen;
-  try { seen = sessionStorage.getItem('airaIntro'); } catch (e) {}
-  if (seen) { if (i.parentNode) i.parentNode.removeChild(i); return; }
-  try { sessionStorage.setItem('airaIntro', '1'); } catch (e) {}
   document.documentElement.classList.add('intro-lock');
   function done() {
     document.documentElement.classList.remove('intro-lock');
@@ -342,9 +333,7 @@ html.intro-lock, html.intro-lock body { overflow: hidden; }
     i.classList.add('ai-skip');
     setTimeout(done, 450);
   });
-  var rm = window.matchMedia &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  setTimeout(done, rm ? 950 : 3750);
+  setTimeout(done, 3750);
 })();
 </script>
 
